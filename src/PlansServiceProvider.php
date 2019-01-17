@@ -1,6 +1,6 @@
 <?php
 
-namespace Rennokki\Plans;
+namespace Abrahamf24\Plans;
 
 use Illuminate\Support\ServiceProvider;
 

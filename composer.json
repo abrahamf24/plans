@@ -1,5 +1,5 @@
 {
-    "name": "rennokki/plans",
+    "name": "abrahamf24/plans",
     "description": "Laravel Plans is a package for SaaS apps that need management over plans, features, subscriptions, events for plans or limited, countable features.",
     "keywords": [
         "eloquent",
@@ -10,13 +10,18 @@
         "model",
         "saas"
     ],
-    "homepage": "https://github.com/rennokki/plans",
+    "homepage": "https://github.com/abrahamf24/plans",
     "license": "MIT",
     "authors": [
         {
             "name": "Alex Renoki",
             "email": "rennokki@gmail.com",
             "homepage": "https://twitter.com/rennokki",
+            "role": "Developer"
+        },
+        {
+            "name": "Abraham Flores",
+            "email": "abr.flores24@gmail.com",
             "role": "Developer"
         }
     ],
@@ -32,12 +37,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Rennokki\\Plans\\": "src"
+            "Abrahamf24\\Plans\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rennokki\\Plans\\Test\\": "tests"
+            "Abrahamf24\\Plans\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -46,7 +51,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Rennokki\\Plans\\PlansServiceProvider"
+                "Abrahamf24\\Plans\\PlansServiceProvider"
             ]
         }
     },

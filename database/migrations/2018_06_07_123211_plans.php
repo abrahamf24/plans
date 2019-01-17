@@ -17,12 +17,15 @@ class Plans extends Migration
             $table->increments('id');
 
             $table->string('name');
+            $table->string('code');
             $table->text('description')->nullable();
 
             $table->float('price', 8, 2);
             $table->string('currency');
 
-            $table->integer('duration')->default(30);
+            $table->integer('interval_count')->default(1);
+            $table->enum('interval_unit', ['day','month'])->default('month');
+            $table->string('type')->default('main');
 
             $table->timestamps();
         });
@@ -47,6 +50,8 @@ class Plans extends Migration
 
             $table->integer('model_id');
             $table->string('model_type');
+
+            $table->string('name')->default('main');
 
             $table->enum('payment_method', ['stripe'])->nullable()->default(null);
             $table->boolean('is_paid')->default(false);

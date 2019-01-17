@@ -1,6 +1,6 @@
 <?php
 
-namespace Rennokki\Plans\Models;
+namespace Abrahamf24\Plans\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

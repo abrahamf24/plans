@@ -1,8 +1,8 @@
 <?php
 
-namespace Rennokki\Plans\Test;
+namespace Abrahamf24\Plans\Test;
 
-use Rennokki\Plans\Models\PlanFeatureModel;
+use Abrahamf24\Plans\Models\PlanFeatureModel;
 
 class FeatureTest extends TestCase
 {
@@ -13,8 +13,8 @@ class FeatureTest extends TestCase
     {
         parent::setUp();
 
-        $this->user = factory(\Rennokki\Plans\Test\Models\User::class)->create();
-        $this->plan = factory(\Rennokki\Plans\Models\PlanModel::class)->create();
+        $this->user = factory(\Abrahamf24\Plans\Test\Models\User::class)->create();
+        $this->plan = factory(\Abrahamf24\Plans\Models\PlanModel::class)->create();
     }
 
     public function testConsumeFeature()
